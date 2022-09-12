@@ -21,7 +21,7 @@ export const ListContent = [
   },
   {
     id: 5,
-    nome: "WeatherPage",
+    nome: "vanilaPractice",
     text: "순수 자바스크립트만 사용하여 니꼬쌤의 강의를 보며 함께 만들었던 1인 프로젝트",
   }
 ];
@@ -44,8 +44,8 @@ export const ListButton = [
     value: "todolist"
   },
   {
-    name: "WeatherPage",
-    value: "weatherpage"
+    name: "vanilaPractice",
+    value: "vanilapractice"
   }
 ];
 
