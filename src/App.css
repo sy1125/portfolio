@@ -1,38 +1,384 @@
-.App {
-  text-align: center;
+/* Main */
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cover {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cover div {
+  width: calc(100% / 6);
+  height: calc(100% / 3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cover .off {
+  background-color: #000;
+}
+
+.main .content {
+  line-height: 0;
+}
+
+.main .content .main-title {
+  font-size: 60px;
+  line-height: 87px;
+  position: absolute;
+  left: 240px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-weight: bold;
+}
+
+.main .content video {
+  width: 100%;
+  height: 100%;
+}
+
+/* MyStory */
+.story {
+  position: relative;
+  padding-bottom: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+.story .content {
+  margin: 0 240px;
+}
+
+.story .content .title {
+  position: relative;
+  padding: 80px 0 20px;
+  font-size: 40px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.story .content .title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 158px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.story .content .subtitle {
+  padding: 20px 0 30px;
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+}
+
+.story .content .icon-fe {
+  width: 400px;
+}
+
+.story .content .text {
+  padding-top: 50px;
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+}
+
+.story .content .text b {
+  color: #21CEF1;
+}
+
+.story .link {
+  position: absolute;
+  top: 0px;
+  right: 240px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.story .link li a {
+  display: block;
+  font-size: 40px;
+  line-height: 58px;
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.story .link li:hover a {
+  color: #fff;
+}
+
+/* Technic */
+.technic {
+  position: relative;
+  padding-bottom: 80px;
+  background-color: #222;
+}
+
+.technic .content {
+  position: relative;
+  margin: 0 240px;
+}
+
+.technic .content .title {
+  position: relative;
+  padding: 80px 0 20px;
+  font-size: 40px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.technic .content .title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 144px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.technic .content .subtitle {
+  padding: 20px 0 50px;
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+}
+
+.technic .content .program-area {
+  display: flex;
+}
+
+.technic .content .program-area.left {
+  justify-content: flex-start;
+}
+
+.technic .content .program-area.right {
+  padding-top: 80px;
+  justify-content: flex-end;
+}
+
+.technic .content .program-area .program-group {
+  max-width: 580px;
+  margin-right: 90px;
+}
+
+.technic .content .program-area .program-group .icon-program {
+  width: 184px;
+}
+
+.technic .content .program-area .program-group .program-title {
+  display: block;
+  padding: 15px 0;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.technic .content .program-area .program-group .subscribe {
+  display: block;
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+}
+
+/* Career */
+.career {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  /* padding-bottom: 80px; */
+  background: url("/public/assets/images/img_main.png")no-repeat center/cover;
+}
+
+.career .content {
+  margin: 0 240px;
+}
+
+.career .content .title {
+  position: relative;
+  padding: 80px 0 20px;
+  font-size: 40px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.career .content .title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 144px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.career .content .subtitle {
+  position: relative;
+  padding: 20px 0 50px;
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+}
+
+.career .content .career-area {
+  max-width: 750px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 240px;
+}
+
+.career .content .career-area .career-group+.career-group {
+  margin-top: 40px;
+}
+
+.career .content .career-area .career-group .career-date {
+  display: block;
+  font-size: 24px;
+  line-height: 35px;
+  color: #999;
+}
+
+.career .content .career-area .career-group .career-title {
+  display: block;
+  padding: 10px 0;
+  font-size: 24px;
+  line-height: 35px;
+  color: #21CEF1;
+}
+
+.career .content .career-area .career-group .career-text {
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+}
+
+/* Project */
+
+.project {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #222;
+}
+
+.project .content {
+  position: relative;
+  margin: 0 240px;
+  color: #fff;
+}
+
+.project .content .title {
+  position: relative;
+  padding: 80px 0 20px;
+  font-size: 40px;
+  line-height: 58px;
+  color: #fff;
+}
+
+.project .content .title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 144px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.project .content .subtitle {
+  padding: 20px 0 50px;
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+}
+
+.project .content .list-area {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 90px;
+}
+
+.project .content .list-area .btn-group {
+  position: relative;
+  padding-left: 25px;
+}
+
+.project .content .list-area .btn-group::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #777;
+}
+
+.project .content .list-area .btn-group .btn-list {
+  position: relative;
+  display: block;
+  padding: 15px 0;
+  font-size: 32px;
+  line-height: 46px;
+  color: #777;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.project .content .list-area .btn-group .btn-list:hover {
+  color: #fff;
+}
+
+.project .content .list-area .btn-group .btn-list:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -25px;
+  display: block;
+  width: 2px;
+  height: 76px;
+  background: #fff;
+}
+
+.project .content .list-area .list-content {
+  margin-right: 200px;
+  max-width: 500px;
+}
+
+.project .content .list-area .list-content .list-title {
+  font-size: 60px;
+  line-height: 87px;
+  font-weight: 700;
+}
+
+.project .content .list-area .list-content .list-text {
+  padding: 40px 0 50px;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.project .content .list-area .list-content .list-icon a+a {
+  padding-left: 20px;
 }

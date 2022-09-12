@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import * as React from 'react'
+import { Reset } from 'styled-reset'
+import Main from './components/Main';
+import MyStory from './components/MyStory';
+import Technic from './components/Technic';
 import './App.css';
+import Career from './components/Career';
+import Project from './components/Project';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Reset />
+      <div className="App">
+        <Main />
+        <MyStory />
+        <Technic />
+        <Career />
+        <Project />
+      </div>
+    </React.Fragment>
   );
 }
 
