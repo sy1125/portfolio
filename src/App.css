@@ -358,11 +358,11 @@ button {
   cursor: pointer;
 }
 
-.project .content .list-area .btn-group .btn-list:hover {
+.project .content .list-area .btn-group .btn-list.active {
   color: #fff;
 }
 
-.project .content .list-area .btn-group .btn-list:hover::before {
+.project .content .list-area .btn-group .btn-list.active::before {
   content: '';
   position: absolute;
   top: 0;

@@ -1,8 +1,10 @@
-import MainCover from "./MainCover";
+import Cover from "./Cover";
+import { cover } from "../util/Data";
+
 const Main = () => {
   return (
     <div className="main">
-      <MainCover />
+      <Cover cover={cover.main} />
       <div className="content">
         <video autoPlay={true} playsInline={true} muted={true} loop={true} >
           <source src="/assets/videos/main.mp4" type="video/mp4" />
