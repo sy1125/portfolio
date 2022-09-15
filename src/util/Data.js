@@ -52,6 +52,6 @@ export const ListButton = [
 export const cover = {
   'main': ['off', 'off', 'on', 'off', 'on', 'off', 'off', 'off', 'off', 'on', 'on', 'on', 'off', 'off', 'off', 'on', 'off', 'off'],
   'technic': ['off', 'off', 'off', 'off', 'off', 'on', 'off', 'off', 'off', 'off', 'off', 'off', 'on', 'off', 'off', 'off', 'off', 'off'],
-  'career': ['off', 'off', 'off', 'off', 'off', 'on', 'off', 'on', 'off', 'off', 'off', 'off', 'on', 'off', 'off', 'off', 'off', 'on'],
+  'career': ['off', 'off', 'off', 'off', 'off', 'on', 'off', 'on', 'off', 'off', 'off', 'off', 'on', 'off', 'off', 'off', 'off', 'off'],
   'project': ['off', 'off', 'off', 'off', 'off', 'on', 'off', 'off', 'off', 'off', 'off', 'off', 'on', 'off', 'off', 'off', 'on', 'off',],
 }
