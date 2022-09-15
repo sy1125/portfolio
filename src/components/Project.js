@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import ProjectCover from "./ProjectCover";
+import Cover from "./Cover";
+import { cover } from "../util/Data";
 import { ListButton } from "../util/Data";
 import { getList, filterContent } from "../util/ListFilter";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -11,20 +12,20 @@ const data = [
     git: null,
   },
   {
-    webLink: 'https://github.com/sy1125/perfumeTest',
-    git: 'https://perfumetest-sy.web.app',
+    webLink: 'https://perfumetest-sy.web.app',
+    git: 'https://github.com/sy1125/perfumeTest',
   },
   {
-    webLink: 'https://github.com/sy1125/Emotion-Diary',
-    git: 'https://seonyong-react-diary.web.app',
+    webLink: 'https://seonyong-react-diary.web.app',
+    git: 'https://github.com/sy1125/Emotion-Diary',
   },
   {
-    webLink: 'https://github.com/sy1125/todolist-vue',
-    git: 'https://todolist-vue-sy.web.app',
+    webLink: 'https://todolist-vue-sy.web.app',
+    git: 'https://github.com/sy1125/todolist-vue',
   },
   {
-    webLink: 'https://github.com/sy1125/vanilaPractic',
-    git: 'https://github.com/sy1125',
+    webLink: 'https://qnfto7898.cafe24.com/web/vanilaPractice/index.html',
+    git: 'https://github.com/sy1125/vanilaPractice',
   },
 ]
 
@@ -37,7 +38,7 @@ const Project = () => {
   }
   return (
     <div className="project">
-      <ProjectCover />
+      <Cover cover={cover.project} />
       <div className="content">
         <AnimationOnScroll animateIn="animate__fadeIn">
           <p className="title">Project</p>
@@ -46,7 +47,7 @@ const Project = () => {
             <div className="btn-group">
               {ListButton &&
                 ListButton.map((type, index) => (
-                  <button className={`btn-list ${active == index ? 'active' : ''}`} key={index} value={type.name} onClick={(e) => { handleList(e.target.value, index); }}>
+                  <button className={`btn-list ${active === index ? 'active' : ''}`} key={index} value={type.name} onClick={(e) => { handleList(e.target.value, index); }}>
                     {type.name}
                   </button>
                 ))}

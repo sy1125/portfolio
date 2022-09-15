@@ -21,14 +21,15 @@ const TechnicProgram = () => {
       </div>
       <div className="program-area right">
         <div className="program-group">
-          <img className="icon-program" src="/assets/images/Vue_icon@3x.png" alt="리액트" />
+          <img className="icon-program" src="/assets/images/Vue_icon@3x.png" alt="뷰" />
           <span className="program-title">Vue</span>
           <span className="subscribe">안전성이 높은 Vue2를 사용하여 사내 가상프로젝트 경험이 있습니다.<br />
+            Vue3 학습경험이 있습니다.<br />
             CRUD에 최적화된 Todo-List를 제작한 경험이 있습니다.
           </span>
         </div>
         <div className="program-group">
-          <img className="icon-program" src="/assets/images/JS_icon@3x.png" alt="HTML및CSS" />
+          <img className="icon-program" src="/assets/images/JS_icon@3x.png" alt="자바스크립트" />
           <span className="program-title">Javscript</span>
           <span className="subscribe">webpack, parcel 등의 번들러 사용경험이 있습니다.<br />
             ES6문법에 익숙합니다.

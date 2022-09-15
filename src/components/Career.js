@@ -1,4 +1,5 @@
-import CareerCover from "./CareerCover";
+import Cover from "./Cover";
+import { cover } from "../util/Data";
 import CareerText from "./CareerText";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import '../App.css';
@@ -6,7 +7,7 @@ import '../App.css';
 const Career = () => {
   return (
     <div className="career">
-      <CareerCover />
+      <Cover cover={cover.career} />
       <div className="content">
         <AnimationOnScroll animateIn="animate__fadeIn">
           <p className="title">Career</p>

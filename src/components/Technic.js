@@ -1,11 +1,12 @@
-import TechnicCover from "./TechnicCover";
+import Cover from "./Cover";
+import { cover } from "../util/Data";
 import TechnicProgram from "./TechnicProgram";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import '../App.css';
 const Technic = () => {
   return (
     <div className="technic">
-      <TechnicCover />
+      <Cover cover={cover.technic} />
       <div className="content">
         <AnimationOnScroll animateIn="animate__fadeIn">
           <p className="title">Technic</p>
