@@ -3,7 +3,7 @@ import '../App.css';
 const MyStory = () => {
   return (
     <div className="story">
-      <AnimationOnScroll animateIn="animate__fadeIn">
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>
         <div className="content">
           <p className="title">My Story</p>
           <p className="subtitle">노력하는 개발자의 이야기를 들어주세요</p>
@@ -16,7 +16,7 @@ const MyStory = () => {
             그에 안주하지 않고 계속해서 <b>새로운 배움</b>을 추구하는 노력괴 열정은 저에게 도전의식과 함께,<br />
             제가 <b>더 나은 수준의 개발자</b>로 향하는 데에 있어 큰 도움이 되었습니다.</p>
         </div>
-        <AnimationOnScroll animateIn="animate__fadeIn" delay={500}>
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce delay={500}>
           <ul className="link">
             <li><a href="https://velog.io/@tjsdyd7898" target="_blank" rel="noopener noreferrer">BLOG</a></li>
             <li><a href="mailto:qnfto7898@gmail.com" target="_blank" rel="noopener noreferrer">MAIL</a></li>

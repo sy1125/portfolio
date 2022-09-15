@@ -8,10 +8,10 @@ const Technic = () => {
     <div className="technic">
       <Cover cover={cover.technic} />
       <div className="content">
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>
           <p className="title">Technic</p>
           <p className="subtitle">현재 다룰 수 있는 기술입니다</p>
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={500}>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce delay={500}>
             <TechnicProgram />
           </AnimationOnScroll>
         </AnimationOnScroll>

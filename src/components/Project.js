@@ -40,7 +40,7 @@ const Project = () => {
     <div className="project">
       <Cover cover={cover.project} />
       <div className="content">
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>
           <p className="title">Project</p>
           <p className="subtitle">진행했던 프로젝트를 소개합니다</p>
           <div className="list-area">
