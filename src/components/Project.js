@@ -27,6 +27,10 @@ const data = [
     webLink: 'https://qnfto7898.cafe24.com/web/vanilaPractice/index.html',
     git: 'https://github.com/sy1125/vanilaPractice',
   },
+  {
+    webLink: null,
+    git: 'https://github.com/sy1125/react-native-weather',
+  },
 ]
 
 const Project = () => {
@@ -67,9 +71,13 @@ const Project = () => {
                             </a>
                             : null
                         }
-                        <a href={data[type.id - 1].webLink} target="_blank" rel="noopener noreferrer">
-                          <img src="/assets/images/web_icon.png" alt="웹" />
-                        </a>
+                        {
+                          data[type.id - 1].webLink != null ?
+                            <a href={data[type.id - 1].webLink} target="_blank" rel="noopener noreferrer">
+                              <img src="/assets/images/web_icon.png" alt="웹" />
+                            </a>
+                            : null
+                        }
                       </div>
                     }
                   </li>

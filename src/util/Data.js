@@ -23,6 +23,11 @@ export const ListContent = [
     id: 5,
     nome: "vanilaPractice",
     text: "순수 자바스크립트만 사용하여 니꼬쌤의 강의를 보며 함께 만들었던 1인 프로젝트",
+  },
+  {
+    id: 6,
+    nome: "react-native-weather",
+    text: "react-native를 사용하여 사용자의 현재 위치를 인식하고 그에 적합한 날씨를 알려주는 앱"
   }
 ];
 
@@ -46,6 +51,10 @@ export const ListButton = [
   {
     name: "vanilaPractice",
     value: "vanilapractice"
+  },
+  {
+    name: "react-native-weather",
+    value: "reactnativeweather"
   }
 ];
 
