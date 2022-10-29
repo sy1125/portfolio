@@ -28,6 +28,11 @@ export const ListContent = [
     id: 6,
     nome: "react-native-weather",
     text: "react-native를 사용하여 사용자의 현재 위치를 인식하고 그에 적합한 날씨를 알려주는 앱"
+  },
+  {
+    id: 7,
+    nome: "Work-Travel-App",
+    text: "react-native를 사용하여 카테고리에 따라 나누어 기록하는 앱"
   }
 ];
 
@@ -55,6 +60,10 @@ export const ListButton = [
   {
     name: "react-native-weather",
     value: "reactnativeweather"
+  },
+  {
+    name: "Work-Travel-App",
+    value: "worktravelapp"
   }
 ];
 

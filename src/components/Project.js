@@ -31,6 +31,10 @@ const data = [
     webLink: null,
     git: 'https://github.com/sy1125/react-native-weather',
   },
+  {
+    webLink: 'https://expo.dev/@leeseonyong/WorkHardTravelHardApp?serviceType=classic&distribut',
+    git: 'https://github.com/sy1125/Work-Travel-App',
+  },
 ]
 
 const Project = () => {
