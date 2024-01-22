@@ -8,7 +8,7 @@ const MyStory = () => {
           <p className="title">My Story</p>
           <p className="subtitle">노력하는 개발자의 이야기를 들어주세요</p>
           <img className="icon-fe" src="/assets/images/FE_icon@3x.png" alt="프론트엔드" />
-          <p className="text">안녕하세요. 더욱 더 나아가고자 하는 <b>Front-End 주니어 개발자</b> 입니다.<br />
+          <p className="text">안녕하세요. 더욱 더 나아가고자 하는 <b>Front-End 개발자</b> 입니다.<br />
             <b>“아무런 위험을 감수하지 않는다면 더 큰 위험을 감수하게 될 것이다.”</b><br />
             제가 마음속에서 품고있는 문장입니다.<br />
             Front 분야에 만족하지 않고 더 나아가 Back-End 분야에도 관심을 가지고 있습니다.<br />
