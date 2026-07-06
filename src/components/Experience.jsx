@@ -1,24 +1,64 @@
+import { useState } from "react";
+
 const experiences = [
   {
-    date: "2023.01 ~ 2022.12",
+    date: "2024.06 ~ ",
+    company: "나나성형외과",
+    role: "Front-End Developer",
+    projects: [
+      {
+        name: "프로젝트명 예시",
+        description: "프로젝트 설명을 입력하세요.",
+        skills: ["React", "SCSS"],
+      },
+    ],
+  },
+  {
+    date: "2023.01 ~ 2024.01",
     company: "메이드웰넷",
     role: "Front-End Developer",
-    description:
-      "스타트업 회사로, 스스로 문제를 해결하고 넓은 스펙트럼으로 일을 주도적으로 하였습니다. 프로젝트 구축 당시 주로 React와 SCSS, CSS를 사용하였으며 백엔드 개발자와 지속적인 소통과 협업을 통해 프론트엔드 개발자로서 많은 성장을 이룰 수 있었습니다.",
+    projects: [
+      {
+        name: "회사 소개 페이지 구축",
+        description: "프로젝트 설명을 입력하세요.",
+        skills: ["React", "Typescript", "SCSS"],
+      },
+      {
+        name: "반찬 쇼핑몰 유지보수",
+        description: "React(CSR) -> Next.js(SSR) 마이그레이션",
+        skills: ["Next.js", "React", "Typescript", "Tailwind CSS"],
+      },
+      {
+        name: "인테리어 중개 플랫폼 구축",
+        description: "프론트엔드 단독 개발 및 AWS 배포 진행",
+        description2: "어드민 대시보드에서 user 신청 데이터 관리",
+        description3: "회원가입 시 사업자 Validation 개발",
+        description4:
+          "Search Console, Google Tag Manager, SNS Login 등 Third-Party 연동",
+        skills: ["React", "Typescript", "SCSS"],
+      },
+    ],
   },
   {
     date: "2022.01 ~ 2022.11",
     company: "오픈오브젝트",
     role: "Front-End Developer",
-    description:
-      "주로 카드사와 정부기관등을 상대로 웹과 모바일 서비스 개발하는 SI솔루션 업체입니다. 주로 HTML/CSS와 Vue언어를 사용하여 퍼블리싱 업무를 담당하였으며, 지속적인 코드리뷰로 깔끔하게 정리된 코드를 작성할 수 있도록 노력하였습니다.",
-  },
-  {
-    date: "2022.04 ~ 2022.08",
-    company: "신한Card 프로젝트",
-    role: "Front-End Developer",
-    description:
-      "공통 컴포넌트 제작, Javascript를 사용하여 tab기능 구현, 기획과 디자인에 적합한 페이지 제작을 담당하였습니다.",
+    projects: [
+      {
+        name: "신한카드 ODS 구축",
+        description: "code push 전 실시간 코드리뷰 진행",
+        description2: "개발 문서 작성(directory 경로, assets 규격 등)",
+        description3: "Waterfall 개발 프로세스 적용",
+        description4: "단위 테스트 ~ 통합 테스트 진행",
+        skills: ["Vue.js", "Javascript", "SCSS"],
+      },
+      {
+        name: "신한카드 Partners 유지보수",
+        description: "Code Refactoring 진행",
+        description2: "SEO, 성능 개선",
+        skills: ["Javascript", "JQuery", "SCSS"],
+      },
+    ],
   },
 ];
 
@@ -32,9 +72,51 @@ const Experience = () => {
           <div className="experience-item" key={index}>
             <span className="experience-date">{exp.date}</span>
             <div className="experience-info">
-              <h3>{exp.company}</h3>
-              <p className="role">{exp.role}</p>
-              <p className="description">{exp.description}</p>
+              <div className="experience-header">
+                <div>
+                  <h3>{exp.company}</h3>
+                  <p className="role">{exp.role}</p>
+                </div>
+              </div>
+              {exp.projects.length > 0 && (
+                <div className="experience-projects">
+                  {exp.projects.map((project, pIndex) => (
+                    <div className="experience-project" key={pIndex}>
+                      <h4>{project.name}</h4>
+                      <p className="project-description">
+                        {project.description}
+                        {project.description2 && (
+                          <>
+                            <br />
+                            {project.description2}
+                          </>
+                        )}
+                        {project.description3 && (
+                          <>
+                            <br />
+                            {project.description3}
+                          </>
+                        )}
+                        {project.description4 && (
+                          <>
+                            <br />
+                            {project.description4}
+                          </>
+                        )}
+                      </p>
+                      {project.skills.length > 0 && (
+                        <div className="project-skills">
+                          {project.skills.map((skill, sIndex) => (
+                            <span className="project-skill" key={sIndex}>
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
