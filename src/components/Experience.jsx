@@ -2,14 +2,46 @@ import { useState } from "react";
 
 const experiences = [
   {
-    date: "2024.06 ~ ",
+    date: "2024.06 ~ 재직 중",
     company: "나나성형외과",
     role: "Front-End Developer",
     projects: [
       {
-        name: "프로젝트명 예시",
-        description: "프로젝트 설명을 입력하세요.",
-        skills: ["React", "SCSS"],
+        name: "성형 커뮤니티 플랫폼 구축",
+        description: "성형 커뮤니티 플랫폼 앱/웹 프론트엔드 개발 전체 진행",
+        description2:
+          "App Store / Play Store 프로덕션 출시 및 릴리스 지속 관리",
+        description3:
+          "플랫폼 AEO/SEO 전체 향상 - 관련 meta tag 및 seo/aeo 향상 요소 삽입",
+        skills: ["Next.js", "React Native", "Typescript", "Tailwind CSS"],
+      },
+      {
+        name: "성형 에이전시 구축",
+        description: "성형 에이전시 웹 프론트엔드 개발 전체 진행",
+        description2: "Framer로 제작된 웹사이트 Next.js로 전체 rebuild",
+        description3:
+          "Admin 작업 - 관리자가 에이전시 내부 유저 활동 로그 확인 및 콘텐츠 삽입",
+        skills: ["Next.js", "Typescript", "Tailwind CSS", "Framer"],
+      },
+      {
+        name: "수술 경과 기록 앱 배포",
+        description:
+          "수술 후 N회차 별 사진 및 후기 제출 프로세스 앱 프론트엔드 및 백엔드 유지보수 전체 진행",
+        description2:
+          "수술 후 고객 관리 Admin 유지보수, 계약서 유지보수 및 연동 진행",
+        description3:
+          "Docker Compose를 활용한 컨테이너 기반 구성 및 서비스 배포 파이프라인 정립",
+        description4:
+          "App Store / Play Store 프로덕션 출시 및 릴리스 지속 관리",
+        skills: [
+          "Flutter",
+          "Next.js",
+          "Nest.js",
+          "PostgreSQL",
+          "Docker",
+          "AWS S3/EC2",
+          "Claude Code",
+        ],
       },
     ],
   },
@@ -18,11 +50,6 @@ const experiences = [
     company: "메이드웰넷",
     role: "Front-End Developer",
     projects: [
-      {
-        name: "회사 소개 페이지 구축",
-        description: "프로젝트 설명을 입력하세요.",
-        skills: ["React", "Typescript", "SCSS"],
-      },
       {
         name: "반찬 쇼핑몰 유지보수",
         description: "React(CSR) -> Next.js(SSR) 마이그레이션",
