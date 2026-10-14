@@ -26,6 +26,7 @@ const experiences = [
       {
         name: "반찬 쇼핑몰 유지보수",
         description: "React(CSR) -> Next.js(SSR) 마이그레이션",
+        description2: "장바구니 및 결제기능 도입",
         skills: ["Next.js", "React", "Typescript", "Tailwind CSS"],
       },
       {
